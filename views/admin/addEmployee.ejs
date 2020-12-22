@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<%- include('../head') -%>   
+
+<body class="app">   	
+    <%- include('../partials/header') -%>   
+    <div class="app-wrapper">
+	    
+	    <div class="app-content pt-3 p-md-3 p-lg-4">
+		    <div class="container-xl">			    
+			    <h1 class="app-page-title">Employee Registration</h1>
+			    <hr class="mb-4">
+                <div class="row g-4 settings-section">
+	                <div class="col-12 col-md-12">
+		                <div class="app-card app-card-settings shadow-sm p-4">
+						    
+						    <div class="app-card-body">
+							   
+								<form >
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+										 </div>
+										<input id="employee_name" class="form-control col-6" placeholder="Your Name" type="text">
+									</div> <!-- form-group// -->
+									
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+										 </div>
+										<input id="employee_email" class="form-control col-6" placeholder="Email address" type="email">
+									</div> <!-- form-group// -->
+
+									<div class="form-group input-group">
+										<input id="birthdate" class="form-control col-5" placeholder="Birth" type="date" style="margin-right: 10px;">
+										<select id="gender" class="form-control col-3" style="max-width: 100px;">
+											<option selected="">Male</option>
+											<option value="1">Female</option>
+											<option value="2">Others</option>
+										</select>
+									</div> <!-- form-group// -->
+						
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+										</div>
+										<input id="Contact_no" class="form-control col-6" placeholder="(999)999-9999 Your Contact Info."  type="text">
+									</div> <!-- form-group// -->
+						
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+										</div>
+										<input id="emrgency_no" class="form-control col-6" placeholder="(999)999-9999 Emrgency Contact"  type="text">
+									</div> <!-- form-group// -->
+						
+									<div class="form-group input-group">
+										<textarea class="form-control col-6" id="address" cols="30" rows="2" placeholder="Address"></textarea>
+									</div> <!-- form-group// -->
+						
+					
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-building"></i> </span>
+										</div>
+										<select id="status" class="form-control col-6">
+											<option selected="">Single</option>
+											<option>Married</option>	
+										</select>
+									</div> <!-- form-group end.// -->
+
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+										 </div>
+										<input id="technology" class="form-control col-6" placeholder="Enter Technology" type="text">
+									</div> 
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-car"></i> </span>
+										 </div>
+										<input id="vehicle_no" class="form-control col-6" placeholder="Vehicle Number" type="text">
+									</div>
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-building"></i> </span>
+										</div>
+										<select id="position" class="form-control col-6">
+											<option selected="">Trainee</option>
+											<option>Employee</option>
+										</select>
+									</div> <!-- form-group end.// -->
+
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+										 </div>
+										<input id="university" class="form-control col-6" placeholder="Enter University" type="text">
+									</div>	
+									<div class="form-group input-group"> 
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+										</div>
+										<input class="form-control col-6" id="password" placeholder="Password" type="password">
+									</div> <!-- form-group// -->
+									<div class="form-group input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+										</div>
+										<input class="form-control col-6" id="confirm_password" placeholder="Confirm Password" type="password">
+									</div> <!-- form-group// -->                                      
+									<div class="form-group">
+										<button type="submit" id="register" class="btn btn-primary btn-block col-6" > Add Employee  </button>
+						
+						
+									</div> <!-- form-group// -->      
+									<!-- <p class="text-center">Have an account? <a href="">Log In</a> </p>                                                                  -->
+								</form>
+
+
+
+						    </div><!--//app-card-body-->
+						    
+						</div><!--//app-card-->
+	                </div>
+                </div><!--//row-->
+                
+               
+                
+              
+               
+                
+		    </div><!--//container-fluid-->
+	    </div><!--//app-content-->
+        <%- include('../partials/footer') -%>   
+
+    </div><!--//app-wrapper-->    					
+
+ 
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    <!-- Page Specific JS -->
+    <script src="assets/js/app.js"></script> 
+
+</body>
+</html> 
+
